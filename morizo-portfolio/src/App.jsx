@@ -1,9 +1,13 @@
 import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components"; 
+import { Header } from "./components/global/Header";
 
 export const App = () =>  {
   return (
-    null
+    <div>
+    <GlobalStyled/>
+    <Header/>
+    </div>
     );
 }
 
