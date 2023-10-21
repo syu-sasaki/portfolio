@@ -22,6 +22,7 @@ export const Header = () => {
 };
 
 const SHeader = styled.header`
+    background:#333;
     height:4rem;
     width:100%;
     padding: 0.5rem 1rem;
