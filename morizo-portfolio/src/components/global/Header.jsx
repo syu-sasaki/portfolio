@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { SnsButton } from "./SnsButton";
 import { useState } from "react";
+import { Menue } from "./Menue";
 
 export const Header = () => {
     const [isActiveMenue, setIsActiveMenue] = useState(false);
     return (
+        <>
         <SHeader>
             <SH1>
                 <SA>Morizo Portfolio</SA>
@@ -18,6 +20,8 @@ export const Header = () => {
                 </SButton>
             </SDiv>
         </SHeader>
+        <Menue isActiveMenue={isActiveMenue}/>
+        </>
     );
 };
 
@@ -29,6 +33,7 @@ const SHeader = styled.header`
     position: fixed;
     top:0;
     left:0;
+    z-index:99;
     display:flex;
     justify-content: space-between;
     align-items:center;
