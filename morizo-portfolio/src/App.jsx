@@ -1,14 +1,16 @@
 import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components"; 
 import { Header } from "./components/global/Header";
-import { Home } from "./components/home/Home";
+import { Planet } from "./components/index-page/Planet";
+import { IndexPage } from "./components/index-page/IndexPage";
 
 export const App = () =>  {
   return (
     <div>
     <GlobalStyled/>
     <Header/>
-    <Home/>
+    <Planet/>
+    <IndexPage/>
     </div>
     );
 }
