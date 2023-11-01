@@ -34,12 +34,14 @@ export const Planet = () => {
 };
 
 const SDiv1 = styled.div`
+    z-index:98;
     width:20rem;
     height:20rem;
     rotate:20deg;
-    position:absolute;
+    position:fixed;
     top:33%;
     left:40%;
+    perspective:100rem;
     transform-style: preserve-3d;
 `;
 

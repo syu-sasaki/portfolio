@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Title } from "./Title";
 import { SubTitle } from "./SubTitle";
-import { Planet } from "./Planet";
 
 export const Home = () => {
     return (
@@ -15,7 +14,6 @@ export const Home = () => {
                     <SubTitle>Engineer</SubTitle>
                 </SDiv4>
             </SDiv3>
-            <Planet/>
         </SDiv1>
     );
 };
@@ -29,8 +27,6 @@ const SDiv1 = styled.div`
     background:#333;
     width:100vw;
     height:100vh;
-    perspective:100rem;
-    transform-style: preserve-3d;
 `;
 
 const SDiv2 = styled.div`
@@ -40,7 +36,7 @@ const SDiv2 = styled.div`
     background:#333;
     width:50%;
     height:100%;
-    padding-left:6rem;
+    padding-left:5rem;
 `;
 
 const SDiv3 = styled.div`
@@ -50,7 +46,7 @@ const SDiv3 = styled.div`
     background:#333;
     width:50%;
     height:100%;
-    padding-left:6rem;
+    padding-left:5rem;
 `;
 
 const SDiv4 = styled.div`
